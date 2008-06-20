@@ -14,7 +14,7 @@
 
 - (id)initWithFrame:(CGRect)frame {
 	if (self = [super initWithFrame:frame]) {
-		UIImage* scrollWheel;
+//		UIImage* scrollWheel;
 		CGColorSpaceRef rgbSpace;
 	
 		// Mix a clear gray color.
