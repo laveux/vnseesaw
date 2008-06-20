@@ -63,7 +63,7 @@ typedef enum
 	VNCScrollerView*		_scroller;	//!< Scroller subview.
 	VNCContentView*			_screenView;	//!< Child content view that draws the framebuffer.
 	VNCArrowView*			_arrowView;
-	VNCScrollWheelView*		_scrollWheelView;
+//	VNCScrollWheelView*		_scrollWheelView;
 	UINavBarButton*			_keyboardButton;	//
 	UINavBarButton*			_arrowButton;	//
 	UINavBarButton*			_shiftButton;

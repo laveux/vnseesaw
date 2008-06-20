@@ -160,10 +160,10 @@
 		_arrowView = [[VNCArrowView alloc] initWithFrame:subframe];
 
 		// Create scroll wheels.
-		CGSize defaultScrollWheelSize = CGSizeMake(50, 100);
-		subframe.origin = CGPointMake(frame.size.width - defaultScrollWheelSize.width, frame.size.height - kControlsBarHeight - defaultScrollWheelSize.height);
-		subframe.size = defaultScrollWheelSize;
-		_scrollWheelView = [[VNCScrollWheelView alloc] initWithFrame:subframe];
+//		CGSize defaultScrollWheelSize = CGSizeMake(50, 100);
+//		subframe.origin = CGPointMake(frame.size.width - defaultScrollWheelSize.width, frame.size.height - kControlsBarHeight - defaultScrollWheelSize.height);
+//		subframe.size = defaultScrollWheelSize;
+//		_scrollWheelView = [[VNCScrollWheelView alloc] initWithFrame:subframe];
 
 		// Set our background color to black.
 		const float kBlackComponents[] = { 0, 0, 0, 1 };
@@ -178,7 +178,7 @@
 		[self addSubview:_controlsView];
 		[_scroller addSubview:_screenView];
 		[self addSubview:_scroller];
-		[self addSubview:_scrollWheelView];
+//		[self addSubview:_scrollWheelView];
 		
 		// Init some instance variables.
 		_areControlsVisible = NO;
@@ -807,8 +807,7 @@
 		[_scroller setViewOnly:[_connection viewOnly]];
 		[_scroller scrollPointVisibleAtTopLeft:CGPointMake(0, 0)];
 		[_screenView setNeedsDisplay];
-NSLog(@"just before _scrollWheelView setEventFilter");
-		[_scrollWheelView setEventFilter:_filter];
+//		[_scrollWheelView setEventFilter:_filter];
 		
 		// Enable or disable controls depending on view only mode.
 		[self enableControlsForViewOnly:[_connection viewOnly]];
