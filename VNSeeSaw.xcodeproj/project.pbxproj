@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		071A366A0DED96D100D25175 /* ArrowButtons.png in Resources */ = {isa = PBXBuildFile; fileRef = 071A36690DED96D100D25175 /* ArrowButtons.png */; };
+		0721BCB20E0C4F9600F4B025 /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0721BCB10E0C4F9600F4B025 /* libjpeg.a */; };
 		073EAE4D0DE7BC1000446C77 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 073EAE4C0DE7BC1000446C77 /* IOKit.framework */; };
 		075033D00DEB4DB200AFB7F3 /* VNCArrowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 075033CF0DEB4DB200AFB7F3 /* VNCArrowView.m */; };
 		075033ED0DEB557400AFB7F3 /* arrows_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 075033EC0DEB557400AFB7F3 /* arrows_icon.png */; };
@@ -81,7 +82,6 @@
 		07E33F9A0DD634330040BD89 /* VNSeeSawApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E33F8B0DD634330040BD89 /* VNSeeSawApp.m */; };
 		07E33F9B0DD634330040BD89 /* NSString_VNCPasswordCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E33F8D0DD634330040BD89 /* NSString_VNCPasswordCrypto.m */; };
 		07E340190DD6536C0040BD89 /* GraphicsServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07E340180DD6536C0040BD89 /* GraphicsServices.framework */; };
-		07E341580DD675620040BD89 /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07E341570DD675620040BD89 /* libjpeg.a */; };
 		07E341690DD676A90040BD89 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07E341680DD676A90040BD89 /* libz.dylib */; };
 		07E341820DD67AD80040BD89 /* cmd_key.png in Resources */ = {isa = PBXBuildFile; fileRef = 07E3416E0DD67AD70040BD89 /* cmd_key.png */; };
 		07E341830DD67AD80040BD89 /* ctrl_key.png in Resources */ = {isa = PBXBuildFile; fileRef = 07E3416F0DD67AD70040BD89 /* ctrl_key.png */; };
@@ -111,6 +111,7 @@
 
 /* Begin PBXFileReference section */
 		071A36690DED96D100D25175 /* ArrowButtons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ArrowButtons.png; sourceTree = "<group>"; };
+		0721BCB10E0C4F9600F4B025 /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjpeg.a; path = ../../include/libjpeg.a; sourceTree = SOURCE_ROOT; };
 		073EAE3B0DE7B9E300446C77 /* AccelerometerHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccelerometerHandler.h; sourceTree = "<group>"; };
 		073EAE3C0DE7B9EF00446C77 /* AccelerometerHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccelerometerHandler.m; sourceTree = "<group>"; };
 		073EAE4C0DE7BC1000446C77 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
@@ -254,7 +255,6 @@
 		07E33F8D0DD634330040BD89 /* NSString_VNCPasswordCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSString_VNCPasswordCrypto.m; sourceTree = "<group>"; };
 		07E33FB00DD6347E0040BD89 /* VNSeeSaw_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VNSeeSaw_Prefix.pch; sourceTree = "<group>"; };
 		07E340180DD6536C0040BD89 /* GraphicsServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GraphicsServices.framework; path = System/Library/Frameworks/GraphicsServices.framework; sourceTree = SDKROOT; };
-		07E341570DD675620040BD89 /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjpeg.a; path = ../include/libjpeg.a; sourceTree = SOURCE_ROOT; };
 		07E341680DD676A90040BD89 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		07E3416E0DD67AD70040BD89 /* cmd_key.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cmd_key.png; sourceTree = "<group>"; };
 		07E3416F0DD67AD70040BD89 /* ctrl_key.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ctrl_key.png; sourceTree = "<group>"; };
@@ -294,9 +294,9 @@
 				1D3623EC0D0F72F000981E51 /* CoreGraphics.framework in Frameworks */,
 				C92F10360D965729001D9DFC /* CoreFoundation.framework in Frameworks */,
 				07E340190DD6536C0040BD89 /* GraphicsServices.framework in Frameworks */,
-				07E341580DD675620040BD89 /* libjpeg.a in Frameworks */,
 				07E341690DD676A90040BD89 /* libz.dylib in Frameworks */,
 				073EAE4D0DE7BC1000446C77 /* IOKit.framework in Frameworks */,
+				0721BCB20E0C4F9600F4B025 /* libjpeg.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,9 +526,9 @@
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0721BCB10E0C4F9600F4B025 /* libjpeg.a */,
 				073EAE4C0DE7BC1000446C77 /* IOKit.framework */,
 				07E341680DD676A90040BD89 /* libz.dylib */,
-				07E341570DD675620040BD89 /* libjpeg.a */,
 				07E340180DD6536C0040BD89 /* GraphicsServices.framework */,
 				1D3623EB0D0F72F000981E51 /* CoreGraphics.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
@@ -802,6 +802,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/libjpeg\"",
 					"\"$(SRCROOT)/../include\"",
+					"\"$(SRCROOT)/../../include\"",
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = VNSeeSaw;
@@ -821,6 +822,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/libjpeg\"",
 					"\"$(SRCROOT)/../include\"",
+					"\"$(SRCROOT)/../../include\"",
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = VNCemm;
